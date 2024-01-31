@@ -1,6 +1,6 @@
 package aspirador;
 
-public class Aspirador {
+public abstract class Aspirador {
 
     private String cor;
     private String modelo;
@@ -58,7 +58,5 @@ public class Aspirador {
         return true;
     }
     
-    private boolean verificarBateria(){
-        return true;
-    }
+    public abstract boolean verificarBateria();
 }
